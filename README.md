@@ -1,9 +1,14 @@
-# api documentation for  [grunt-banner (v0.6.0)](https://github.com/mattstyles/grunt-banner)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-banner.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-banner) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-banner.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-banner)
+# npmdoc-grunt-banner
+
+#### api documentation for  [grunt-banner (v0.6.0)](https://github.com/mattstyles/grunt-banner)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-banner.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-banner) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-banner.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-banner)
+
 #### Adds a simple banner to files
 
-[![NPM](https://nodei.co/npm/grunt-banner.png?downloads=true)](https://www.npmjs.com/package/grunt-banner)
+[![NPM](https://nodei.co/npm/grunt-banner.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-banner)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-banner_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-banner/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-banner/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Matt Styles",
-        "email": "matt@veryfizzyjelly.com",
         "url": "https://github.com/mattstyles"
     },
     "bugs": {
@@ -60,8 +64,7 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "mattstyles",
-            "email": "matt@veryfizzyjelly.com"
+            "name": "mattstyles"
         }
     ],
     "name": "grunt-banner",
@@ -69,7 +72,6 @@
     "peerDependencies": {
         "grunt": ">=0.4.0"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mattstyles/grunt-banner.git"
@@ -80,16 +82,6 @@
     "version": "0.6.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-banner](#apidoc.module.grunt-banner)
-
-
-
-# <a name="apidoc.module.grunt-banner"></a>[module grunt-banner](#apidoc.module.grunt-banner)
 
 
 
