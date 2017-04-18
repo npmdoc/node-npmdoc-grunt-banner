@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/mattstyles/grunt-banner"
-
-    >grunt-banner (v0.6.0)</a>
+    <a href="https://github.com/mattstyles/grunt-banner">grunt-banner (v0.6.0)</a>
 </h1>
 <h4>Adds a simple banner to files</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-banner">module grunt-banner</a><ol>
 
@@ -100,20 +93,20 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">usebanner = function ( grunt ) {
 
-<span class="apidocCodeCommentSpan">    /* @const */ var insertPositionMarker = &#x27;\uFFFD&#x27;; // Unicode REPLACEMENT CHARACTER -- http://www.fileformat.info/info/unicode
+<span class="apidocCodeCommentSpan">    /* @const */ var insertPositionMarker = '\uFFFD'; // Unicode REPLACEMENT CHARACTER -- http://www.fileformat.info/info/unicode
 /char/fffd/index.htm
 
     function defaultOldBannerRemover(fileContents, newBanner, insertPositionMarker /* , src, options */) {
-        // Find a full-lines-spanning comment with the phrase `Copyright (c) &#x3c;year/name/blah&#x3e;` in it, case-insensitive and `(c)`
+        // Find a full-lines-spanning comment with the phrase `Copyright (c) &lt;year/name/blah&gt;` in it, case-insensitive and `(c)`
 being optional.
         // That will be our old banner and we kill the *entire* comment, it being C or C++ style, multiline or not.
         //
         // We only accept comments which start at column 1, i.e. at the left edge. Anything else is considered a minor - and thus
  irrelevant - comment.
 
-        // Regex for the question: do we have one line in there which starts with `Copyright &#x3c;blabla&#x3e;`?
-        // It&#x27;s okay when it&#x27;s preceded by some basic comment markers, but it MUST be followed by at *least*
-        // one(1) character of &#x27;bla bla&#x27;, whatever that blurb actually may be.
+        // Regex for the question: do we have one line in there which starts with `Copyright &lt;blabla&gt;`?
+        // It's okay when it's preceded by some basic comment markers, but it MUST be followed by at *least*
+        // one(1) character of 'bla bla', whatever that blurb actually may be.
         var copyright_re = /(^|\r\n|\n|\r)[\/*#|\s]*Copyright\s+[^\s\r\n]+/i;
         // Regex for the question: do we have a one-or-many lines covering C comment?
         var c_comment_re   = /(^|\r\n|\n|\r)\/\*[^\0]*?\*\/\s*($|\r\n|\n|\r)/gi;
@@ -144,42 +137,42 @@ being optional.
     // Please see the Grunt documentation for more information regarding task
     // creation: http://gruntjs.com/creating-tasks
 
-    grunt.registerMultiTask( &#x27;usebanner&#x27;, &#x27;Adds a banner or a footer to a file&#x27;, function () {
+    grunt.registerMultiTask( 'usebanner', 'Adds a banner or a footer to a file', function () {
         // Set up defaults for the options hash
         var options = this.options({
-            position: &#x27;top&#x27;,
-            banner: &#x27;&#x27;,
+            position: 'top',
+            banner: '',
             linebreak: true,
             process: false,
             replace: false            // boolean (true/false), string, RegExp or function which will filter the content before applying
  the new banner
         });
 
-        if ( options.position !== &#x27;top&#x27; &#x26;&#x26; options.position !== &#x27;bottom&#x27; &#x26;&#x26; options.position !== &#x27;replace&#x27; ) {
-            options.position = &#x27;top&#x27;;
+        if ( options.position !== 'top' &amp;&amp; options.position !== 'bottom' &amp;&amp; options.position !== 'replace' ) {
+            options.position = 'top';
         }
 
         // Verify that if user wishes to replace content with a banner, that they have correctly
         // supplied the content they wish to replace.
         if ( options.replace ) {
             switch ( typeof options.replace ) {
-            case &#x27;boolean&#x27;:
-            case &#x27;string&#x27;:
-            case &#x27;function&#x27;:
+            case 'boolean':
+            case 'string':
+            case 'function':
                 break;
 
-            case &#x27;object&#x27;:
+            case 'object':
                 if ( options.replace instanceof RegExp ) {
                     break;
                 }
                 /* falls through */
 </span>            default:
-                grunt.util.error(&#x27;Detected option `replace` with invalid type - type must be Boolean, String, RegExp or filter Function
-.&#x27;);
+                grunt.util.error('Detected option `replace` with invalid type - type must be Boolean, String, RegExp or filter Function
+.');
                 return;
             }
         } else {
-            options.replace = (options.position === &#x27;replace&#x27;);
+            options.replace = (options.position === 'replace');
         }
 
         var re = null;
@@ -208,20 +201,20 @@ being optional.
     <ul>
     <li>description and source-code<pre class="apidocCodePre">usebanner = function ( grunt ) {
 
-<span class="apidocCodeCommentSpan">    /* @const */ var insertPositionMarker = &#x27;\uFFFD&#x27;; // Unicode REPLACEMENT CHARACTER -- http://www.fileformat.info/info/unicode
+<span class="apidocCodeCommentSpan">    /* @const */ var insertPositionMarker = '\uFFFD'; // Unicode REPLACEMENT CHARACTER -- http://www.fileformat.info/info/unicode
 /char/fffd/index.htm
 
     function defaultOldBannerRemover(fileContents, newBanner, insertPositionMarker /* , src, options */) {
-        // Find a full-lines-spanning comment with the phrase `Copyright (c) &#x3c;year/name/blah&#x3e;` in it, case-insensitive and `(c)`
+        // Find a full-lines-spanning comment with the phrase `Copyright (c) &lt;year/name/blah&gt;` in it, case-insensitive and `(c)`
 being optional.
         // That will be our old banner and we kill the *entire* comment, it being C or C++ style, multiline or not.
         //
         // We only accept comments which start at column 1, i.e. at the left edge. Anything else is considered a minor - and thus
  irrelevant - comment.
 
-        // Regex for the question: do we have one line in there which starts with `Copyright &#x3c;blabla&#x3e;`?
-        // It&#x27;s okay when it&#x27;s preceded by some basic comment markers, but it MUST be followed by at *least*
-        // one(1) character of &#x27;bla bla&#x27;, whatever that blurb actually may be.
+        // Regex for the question: do we have one line in there which starts with `Copyright &lt;blabla&gt;`?
+        // It's okay when it's preceded by some basic comment markers, but it MUST be followed by at *least*
+        // one(1) character of 'bla bla', whatever that blurb actually may be.
         var copyright_re = /(^|\r\n|\n|\r)[\/*#|\s]*Copyright\s+[^\s\r\n]+/i;
         // Regex for the question: do we have a one-or-many lines covering C comment?
         var c_comment_re   = /(^|\r\n|\n|\r)\/\*[^\0]*?\*\/\s*($|\r\n|\n|\r)/gi;
@@ -252,42 +245,42 @@ being optional.
     // Please see the Grunt documentation for more information regarding task
     // creation: http://gruntjs.com/creating-tasks
 
-    grunt.registerMultiTask( &#x27;usebanner&#x27;, &#x27;Adds a banner or a footer to a file&#x27;, function () {
+    grunt.registerMultiTask( 'usebanner', 'Adds a banner or a footer to a file', function () {
         // Set up defaults for the options hash
         var options = this.options({
-            position: &#x27;top&#x27;,
-            banner: &#x27;&#x27;,
+            position: 'top',
+            banner: '',
             linebreak: true,
             process: false,
             replace: false            // boolean (true/false), string, RegExp or function which will filter the content before applying
  the new banner
         });
 
-        if ( options.position !== &#x27;top&#x27; &#x26;&#x26; options.position !== &#x27;bottom&#x27; &#x26;&#x26; options.position !== &#x27;replace&#x27; ) {
-            options.position = &#x27;top&#x27;;
+        if ( options.position !== 'top' &amp;&amp; options.position !== 'bottom' &amp;&amp; options.position !== 'replace' ) {
+            options.position = 'top';
         }
 
         // Verify that if user wishes to replace content with a banner, that they have correctly
         // supplied the content they wish to replace.
         if ( options.replace ) {
             switch ( typeof options.replace ) {
-            case &#x27;boolean&#x27;:
-            case &#x27;string&#x27;:
-            case &#x27;function&#x27;:
+            case 'boolean':
+            case 'string':
+            case 'function':
                 break;
 
-            case &#x27;object&#x27;:
+            case 'object':
                 if ( options.replace instanceof RegExp ) {
                     break;
                 }
                 /* falls through */
 </span>            default:
-                grunt.util.error(&#x27;Detected option `replace` with invalid type - type must be Boolean, String, RegExp or filter Function
-.&#x27;);
+                grunt.util.error('Detected option `replace` with invalid type - type must be Boolean, String, RegExp or filter Function
+.');
                 return;
             }
         } else {
-            options.replace = (options.position === &#x27;replace&#x27;);
+            options.replace = (options.position === 'replace');
         }
 
         var re = null;
@@ -309,3 +302,4 @@ being optional.
     ]
 </div>
 </div>
+</body></html>
