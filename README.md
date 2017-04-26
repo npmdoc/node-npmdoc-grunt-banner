@@ -1,6 +1,6 @@
 # npmdoc-grunt-banner
 
-#### api documentation for  [grunt-banner (v0.6.0)](https://github.com/mattstyles/grunt-banner)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-banner.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-banner) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-banner.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-banner)
+#### basic api documentation for  [grunt-banner (v0.6.0)](https://github.com/mattstyles/grunt-banner)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-banner.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-banner) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-banner.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-banner)
 
 #### Adds a simple banner to files
 
@@ -79,7 +79,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "0.6.0"
+    "version": "0.6.0",
+    "bin": {}
 }
 ```
 
